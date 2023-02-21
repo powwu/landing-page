@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- fontawesome script for service icons (discord, lastfm, etc) -->
+        <script src="https://kit.fontawesome.com/ae94f20c1a.js" crossorigin="anonymous"></script>
+        <style>
+         body {
+             color: white;
+             font-family: "Monaco", "Courier New", monospace;
+             background:
+                 linear-gradient(red, transparent),
+                 linear-gradient(to top left, lime, transparent),
+                 linear-gradient(to top right, blue, transparent);
+             background-blend-mode: screen;
+             background-size: 250% 250%;
+
+             /* use steps instead of constant motion to significantly save performance */
+             animation: Animation 30s steps(85) infinite;
+         }
+
+         div.top {
+             text-align: right;
+             font-size: 15px;
+         }
+
+         a {
+             color: white;
+         }
+
+         img.powwu {
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             margin-top: 18%;
+             width: 100px;
+         }
+
+         div.list {
+             margin-top: 2%;
+             font-size:25px;
+             text-align: center;
+         }
+
+         div.social {
+             font-size: 30px;
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             margin-top: 3%;
+             text-align: center;
+         }
+         div.spacer {
+             height: 10%;
+             width:100%;
+         }
+
+         div.bottom {
+             text-align: center;
+             text-size:18px;
+             margin-top:20%;
+         }
+
+
+         @keyframes Animation {
+             0%{background-position:10% 0%}
+             50%{background-position:98% 98%}
+             100%{background-position:10% 0%}
+         }
+
+         html, body {
+             height: 96%;
+         }
+
+        </style>
+    </head>
+    <body>
+        <noscript>
+            <meta http-equiv="refresh" content="0; url='/basichtml'"/>
+            <a class="no" href="/basichtml">please click here if you're not redirected automatically</a>
+        </noscript>
+        <div class="top">
+            <a href="/basichtml">load basic html</a>
+        </div>
+
+        <img class="powwu" src="/assets/powwu-outline.svg">
+
+        <div class="list">
+            <a href="/about">about</a>
+            <a href="/contact">contact</a>
+            <a href="/overview/#projects">projects</a>
+            <a href="/blog">blog</a>
+        </div>
+
+        <div class="social">
+            <a href="https://discord.gg/AsjdvCAjsdoi"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://last.fm/user/powwu"><i class="fa-brands fa-lastfm"></i></a>
+            <a href="https://github.com/powwu"><i class="fa-brands fa-github"></i></a>
+            <a href="https://reddit.com/u/powwu"><i class="fa-brands fa-reddit"></i></a>
+            <a href="mailto:hello@powwu.xyz"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+        <div class="bottom">
+            admissions officer? click
+            <a href="/overview">here</a>
+            for easy access
+        </div>
+
+        <img src="https://powwu.xyz/trns">
+    </body>
+</html>
+
+
