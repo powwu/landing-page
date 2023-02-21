@@ -3,6 +3,10 @@
     <head>
         <!-- fontawesome script for service icons (discord, lastfm, etc) -->
         <script src="https://kit.fontawesome.com/ae94f20c1a.js" crossorigin="anonymous"></script>
+
+	      <!-- set viewport to make mobile size correctly -->
+	      <meta name="viewport" content="width=device-width">
+
         <style>
          body {
              color: white;
@@ -14,7 +18,7 @@
              background-blend-mode: screen;
              background-size: 250% 250%;
 
-             /* use steps instead of constant motion to significantly save performance */
+             /* use steps instead of constant motion to significantly improve performance */
              animation: Animation 30s steps(85) infinite;
          }
 
@@ -63,7 +67,8 @@
 
          @keyframes Animation {
              0%{background-position:10% 0%}
-             50%{background-position:98% 98%}
+             50%{background-position:90% 90%}
+             55%{background-position:90% 90%}
              100%{background-position:10% 0%}
          }
 
@@ -82,6 +87,8 @@
             <a href="/basichtml">load basic html</a>
         </div>
 
+	<script>
+	</script>
         <img class="powwu" src="/assets/powwu-outline.svg">
 
         <div class="list">
